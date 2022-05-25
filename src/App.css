@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+ background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+ border: 1px solid black;
+ border-radius: .5rem;
+ margin-top: 2rem;
+ max-width: 50%;
+ box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.478);
+ background-color: rgb(252, 252, 252);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header-title {
+ text-decoration: none;
+ color: black;
+}
+.header-title:hover {
+ color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-btn {
+ /* display: inline-block; */
+ border: transparent;
+ padding: .2rem .5rem;
+ background-color: grey;
+ color: white;
+ cursor: pointer;
+ border-radius: .2rem;
+ margin: 1rem;
+}
+
+.create-btn:hover {
+ background-color: rgb(100, 100, 100);
+ transition: 300ms;
+}
+
+.container.event-list {
+ margin-top: .7rem;
+ padding: 1rem;
+}
+
+/* event */
+
+.event-items{
+ border: 1px solid grey;
+ display: flex;
+ margin-top: .5rem;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ border-radius: .3rem;
+ /* text-decoration: none; */
+ color: black;
+}
+
+.event-items:hover {
+ border: 1px solid black;
+ box-shadow: 1px 1px 1px 1px;
+}
+.event-items:active {
+ border: grey;
+ background-color: rgb(204, 203, 203);
+}
+
+.event-item {
+ /* text-align: center; */
+ margin: 0;
+ padding: .5rem;
+ font-weight: 600;
+}
+
+.event-timer {
+ margin-bottom: 0;
+ padding-right: .5rem;
+}
+
+/* modal */
+
+.modal-bg {
+ position: fixed;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.408);
+}
+
+.modal-wrapper {
+ background-color: white;
+ max-width: 40%;
+ margin: 5rem auto;
+ border-radius: 1rem;
+ padding: 1rem;
+ box-shadow: 1px 2px 10px 3px;
+}
+
+.title-wrapper {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: .7rem;
+}
+
+.title-wrapper input {
+ padding-left: .3rem;
+}
+
+.title {
+ text-align: left;
+}
+
+.desc-wrapper {
+ display: flex;
+ flex-direction: column;
+}
+
+.desc-wrapper textarea {
+ resize: none;
+ padding-left: .3rem;
+}
+
+.date {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+}
+
+.button {
+ text-align: end;
+ margin-bottom: .5rem;
+}
+
+.date {
+ margin-top: .7rem;
+}
+
+.date p {
+ padding: 0;
+ margin: 0;
+}
+
+.btn-add {
+ padding: .4em;
+ border: none;
+ border-radius: .3em;
+ margin-top: .5rem;
+}
+
+.btn-create {
+ /* display: inline-block; */
+ border: transparent;
+ padding: .2rem .5rem;
+ background-color: grey;
+ color: white;
+ cursor: pointer;
+ border-radius: .2rem;
+}
+
+.btn-create:hover {
+ background-color: rgb(100, 100, 100);
+ transition: 300ms;
+}
+
+.no-events {
+ text-align: center;
+ 
+}
+.no-events h3 {
+ margin-bottom: 1rem;
+}
+
+.btn-back {
+ border: none;
+ background-color: transparent;
+ font-size: 1.4rem;
+}
+
+.event-details {
+ text-align: center;
+}
+
+
+/* error validering */
+
+.error-msg {
+ color: red;
+ margin-bottom: 0;
+}
+
+.error input {
+ border: 1px solid red;
+}
+
+.error textarea {
+ border: 1px solid red;
 }
