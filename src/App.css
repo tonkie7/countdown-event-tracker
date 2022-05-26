@@ -203,3 +203,7 @@ body {
 .error textarea {
  border: 1px solid red;
 }
+
+.success input{
+ border: 1px solid green;
+}

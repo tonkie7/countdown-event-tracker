@@ -13,7 +13,7 @@ const Modal = ({ toggleModal, addEvent }) => {
        console.log('empty')
        setError(true)
        return
-     } 
+     }
     if(eventDesc.trim() === '') {
       setError(true)
       return

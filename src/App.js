@@ -43,7 +43,7 @@ function App() {
       // console.log(res.data)
       return [res.data, ...state]
     })
-    getEvents()
+    // getEvents()
   }
 
   const [modal, setModal] = useState(false)
